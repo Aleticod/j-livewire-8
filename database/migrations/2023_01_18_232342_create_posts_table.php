@@ -15,7 +15,15 @@ class CreatePostsTable extends Migration
     {
         Schema::create('posts', function (Blueprint $table) {
             $table->id();
+
+            $table->unsignedBigInteger('course_id'); // course id
+
+            $table->string('name');  // name of the post
+            $table->boolean('free')->default(0);    // is the post free or not
+
             $table->timestamps();
+
+            $table->foreign('course_id')->references('id')->on('courses'); // course id foreign key
         });
     }
 
