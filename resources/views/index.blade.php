@@ -5,7 +5,6 @@
     <h1 class="text-3xl text-gray-700 mb-2 uppercase">Últimos Cursos</h1>
     <h2 class="text-xl text-gray-600">Formate online como profesional en tecnologia</h2>
     <h3 class="text-lg text-gray-600">70% de los graduados duplican sus ingresos</h3>
-
-    @livewire('course-list')
   </div>
+  @livewire('course-list')
 @endsection
